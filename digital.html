@@ -1,0 +1,840 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Infosys - ESG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Language" content="en"/>         
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+<script src="js/clientlib-dependencies.js"></script>
+<script type="text/javascript" src="js/customdev.js"></script>
+<link rel="stylesheet" href="css/clientlib-commons.css" type="text/css">
+<link rel="stylesheet" href="css/clientlib-base.css" type="text/css">
+
+        <style>
+          #nav_your_nxt .relative {
+              height: 300px;
+          }
+      
+          .fontweight700 {
+              font-weight: 700 !important;
+          }
+      
+          .fontweight800 {
+              font-weight: 800 !important;
+          }
+      
+          .plus-row {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              justify-content: center;
+              /* align-items: center; */
+          }
+      
+          .plus-row .eqh-box {
+              padding: 30px;
+          }
+      
+          .ht-ctrl-center-box {
+              height: 620px !important;
+          }
+      
+          .plus-row [class*="col-"] {
+              margin-bottom: 20px;
+              padding-left: 10px;
+              padding-right: 10px;
+          }
+      
+          .plus-row .eqh-box .h3 {
+              margin: 0;
+              font-size: 35px;
+              line-height: 1;
+              font-weight: 500;
+              font-family: 'tungstenw05-medium', 'Oswald', sans-serif;
+          }
+      
+          .plus-row .eqh-box .btn-bottom {
+              position: relative !important;
+              padding: 10px 0 0;
+              bottom: 0;
+              font-size: 18px !important;
+              line-height: 1.2;
+          }
+      
+          .plus-row img {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+          }
+      
+          @media screen and (max-width:1024px) {
+              .plus-row .eqh-box {
+                  padding: 15px;
+              }
+          }
+      
+          @media screen and (max-width:767px) {
+              .plus-row [class*="col-"] {
+                  padding-left: 15px;
+                  padding-right: 15px;
+              }
+      
+              .ht-ctrl-center-box {
+                  height: 300px !important;
+              }
+      
+              .ht-ctrl-center-box img {
+                  max-width: 40% !important;
+              }
+      
+              /* .plus-row [class*="col-"]:nth-of-type(3) {
+                  margin-bottom: 25px !important;
+              } */
+      
+              .plus-row img {
+                  max-width: 50%;
+              }
+          }
+      
+          @media screen and (max-width: 480px) {
+              .plus-row img {
+                  max-width: 90%;
+              }
+          }
+      </style>
+      
+      <style>
+          .box-wrapper {
+              /*	background-color: #dedede;*/
+              width: 100%;
+              height: 80vh;
+              float: left;
+              border: 1px solid #d1cfcf;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          }
+      
+          .border-bottom-next {
+              border-bottom: 1px solid #d1cfcf;
+          }
+      
+          .box-wrapper .box-content {
+              height: 40vh;
+              position: relative;
+              overflow: hidden;
+          }
+      
+          .box-wrapper .box-content:after,
+          .overlay-mid-box:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background: #4d0519;
+              transform: translateX(-100%);
+              /* transition: all 0.7s cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+              -webkit-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -moz-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -o-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              /* ease-in-out */
+              z-index: -1;
+          }
+      
+          .box-wrapper .box-content:hover:after {
+              transform: translateX(0%);
+              /* transition-delay: 0.5s; */
+          }
+      
+          .overlay-mid-box {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+          }
+      
+          .overlay-mid-box:after {
+              /* background-color: #4c0519 !important; */
+              transform: translateY(-100%) !important;
+          }
+      
+          .box-wrapper .box-content:hover .overlay-mid-box:after {
+              transform: translateY(0%) !important;
+          }
+      
+          .box-img {
+              position: relative;
+              height: 100%;
+          }
+      
+          .box-img img {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 100%;
+              -webkit-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -moz-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -o-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              /* ease-in-out */
+          }
+      
+          .box-center .box-img img {
+              left: 50%;
+              transform: translateX(-50%) !important;
+              max-width: 100%;
+              height: auto;
+              -webkit-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -moz-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -o-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              /* ease-in-out */
+          }
+      
+          .box-last .box-img img {
+              right: 0;
+              left: auto;
+          }
+      
+          .box-last .box-para {
+              left: 0;
+              right: auto;
+          }
+      
+          .box-center .box-para {
+              top: 0;
+              bottom: auto;
+              left: 0;
+              width: auto;
+              padding: 40px 30px 30px;
+              height: 100%;
+          }
+      
+          .box-para {
+              position: absolute;
+              width: 65%;
+              right: 0px;
+              bottom: 0px;
+              padding: 15px 15px 30px;
+          }
+      
+          .box-head>h3,
+          .box-desc>p {
+              /* transition: all 700ms cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+              -webkit-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -moz-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -o-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              /* ease-in-out */
+          }
+      
+          .box-content .box-desc>p {
+              transition-delay: 0.2s;
+          }
+      
+          .box-content:hover .box-head>h3,
+          .box-content:hover .box-desc>p {
+              transform: translateX(300%) !important;
+          }
+      
+          .box-content:hover .box-desc>p {
+              transition-delay: 0.2s;
+          }
+      
+          .box-content:hover .box-img img {
+              transform: scale(1.1);
+              transform-origin: top left;
+          }
+      
+          .box-center:hover .box-img img {
+              transform: translateX(-50%) scale(1.1) !important;
+              transform-origin: center center;
+          }
+      
+          .overlay-cnt {
+              position: absolute;
+              top: 0;
+              left: 0;
+          }
+      
+          .overlay-cnt h3,
+          .overlay-cnt p {
+              /* transition: all 0.7s cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+              -webkit-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -moz-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              -o-transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              transition: all 700ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+              /* ease-in-out */
+              transform: translateX(400%);
+              color: #fff !important;
+          }
+      
+          .box-content:hover .overlay-cnt h3,
+          .box-content:hover .overlay-cnt p {
+              transform: translateX(0%);
+              transition-delay: 0.7s;
+          }
+      
+          .box-content:hover .overlay-cnt p {
+              transition-delay: 0.9s;
+          }
+      
+          .box-last:hover .box-head>h3,
+          .box-last:hover .box-desc>p {
+              transform: translateX(-400%) !important;
+          }
+      
+          .box-last .overlay-cnt h3,
+          .box-last .overlay-cnt p {
+              transform: translateX(-400%) !important;
+          }
+      
+          .box-last:hover .overlay-cnt h3,
+          .box-last:hover .overlay-cnt p {
+              transform: translateX(0%) !important;
+          }
+      
+          .box-head h3 {
+              font-weight: 900;
+              margin: 0 0 5px;
+              font-size: 30px;
+          }
+      
+          .box-desc p {
+              color: #7e7e7e;
+              font-weight: 600;
+              margin: 0;
+          }
+      
+          .ht-ctrl-box {
+              height: 80vh !important;
+          }
+      
+          .bg-medium-coral {
+              background-color: #f36d52;
+          }
+      
+          @media screen and (max-width:1024px) {
+              .box-wrapper {
+                  height: auto;
+              }
+      
+              .box-wrapper .box-content {
+                  height: 35vh;
+              }
+      
+              .ht-ctrl-box {
+                  height: 70vh !important;
+              }
+      
+              .box-img img {
+                  width: 200px;
+                  height: auto;
+              }
+      
+          }
+      
+          @media screen and (max-width: 992px) {
+      
+              .box-wrapper .box-content {
+                  height: 25vh;
+              }
+      
+              .pl {
+                  padding-left: 0;
+              }
+      
+              .ht-ctrl-box {
+                  height: 50vh !important;
+              }
+          }
+      
+          @media screen and (max-width:767px) {
+              .ctrl-box-width {
+                  width: 50%;
+              }
+      
+              .box-img img {
+                  width: 150px;
+              }
+      
+              .box-head h3 {
+                  font-size: 25px;
+              }
+      
+              .box-desc p {
+                  font-size: 16px;
+              }
+      
+              .box-center .box-para {
+                  padding: 70px 30px 30px;
+              }
+      
+              .box-wrapper .box-content {
+                  height: 50vh;
+              }
+      
+              .ht-ctrl-box {
+                  height: 100vh !important;
+              }
+          }
+      
+          @media screen and (max-width:480px) {
+              .ctrl-box-width {
+                  width: 100%;
+              }
+      
+              .pl {
+                  padding-left: 15px;
+              }
+      
+              .box-center .box-img img {
+                  left: auto;
+                  right: 0;
+                  transform: translateX(0) !important;
+              }
+      
+              .box-wrapper .box-content,
+              .ht-ctrl-box {
+                  height: 25vh !important;
+              }
+          }
+      </style>
+
+</head>
+
+<body class="page basepage basicpage ">
+
+    <div>
+        <div class="root responsivegrid">
+        
+        
+        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+            
+            <div class="pagedetails parbase aem-GridColumn aem-GridColumn--default--12"></div>
+        <div class="header aem-GridColumn aem-GridColumn--default--12">
+        
+          <header>
+            <nav class="navbar navbar-default navbar-fixed-top scrollbg-show" role="navigation">
+              <div class="container mt45">
+                <div class="navbar-header page-scroll">
+                  <a class="navbar-brand" href="index.html" title="Go to Infosys Home" x="0" y="0" width="86px" height="32px" viewbox="0 309.9 595.3 224" enable-background="new 0 309.9 595.3 224" xml:space="preserve" class="logo">
+                    <path id="logo" src></path>
+                  </svg> </a>
+                  <a href="index.html"><img id="logo" src="image/logo.png"></a>
+                </div>
+                  <div class="header-menu hidden-tab">
+        <ul class="nav navbar-nav navbar-right pos-right">
+              
+                  <li> <a href="digital.html">Navigate your next</a> </li>
+                  <li> <a href="careers.html">Careers</a> </li>
+                  <li> <a href="investors.html">Investors</a> </li>
+                  <li> <a href="about.html">About Us</a> </li>
+                  <li> <a href="esg.html">ESG</a> </li>   
+          </ul>
+          </div>
+              </div>
+            </nav>
+          </header>
+          </div>
+          <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+          <div class="xf-content-height">
+          <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">   
+              <div class="freeflowhtml aem-GridColumn aem-GridColumn--default--12">
+          <link href="css/burger-menu.css" rel="stylesheet">
+          <div class="burger-search-wrapper navbar-fixed-top">
+              <div class="container">
+                  <nav class="hamburger-menu" role="main nav" aria-label="open menu">
+                      <div class="menu-bg"></div>
+                      <div class="circle"></div>
+                      <a href="javascript:void(0);" class="burger" aria-label="open menu" aria-haspopup="false" aria-expanded="false">
+                          <div class="icon-bar1"></div>
+                          <div class="icon-bar2"></div>
+                          <div class="icon-bar3"></div>
+                      </a>
+                      <div class="menu">
+                          <div class="fix-menu hidden-sm hidden-xs col-md-9 col-sm-12 col-xs-12 p0">
+                          </div>
+                          <div class="col-md-3 col-sm-12 col-xs-12 menuItems"> <img src="image/logo.svg" alt="Infosys"
+                                      class="img-responsive logo-inner"> </a>
+                              <ul class="list-unstyled">
+                                  <li> <a href="digital.html">Navigate
+                                          your next</a> </li>
+                                  <li> <a href="">Industries
+                                               </a> </li>
+                                  <li> <a href="">Services
+                                      </a> </li>
+                                  <li> <a href="">Platforms
+                                               </a> </li>
+                                  <li> <a href="">Infosys Living Labs</a> </li>
+                                  <li> <a href="">Infosys
+                                          Knowledge Institute </a>
+                                  </li>
+                                  <li> <a href="about.html">About Us </a> </li>
+                                  <li class="smalltext"> <a href="investors.html">Investors
+                                          </a> </li>
+                                  <li class="smalltext"> <a href="careers.html">Careers
+                                     </a> </li>
+                                  <li class="smalltext"> <a href="">Newsroom </a> </li>
+                                  <li class="smalltext"> <a href="">Contact Us
+                                         </a> </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+          <script src="js/burger-menu.js"></script>
+          </div>   
+          </div>
+          </div>
+          </div>                                                                -->
+
+    <img class="portal-mob visible-xs" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/portals.png" alt="Portals"/>
+                   
+    <div role="img" aria-label="Navigate Your Next to Evolve your Organization into a Live Enterprise" class="repeated-css bg-sapphire-medium"> 
+     <img src="image/live-enterprise-hero.png" class="slide-image hidden-xs" alt="Navigate Your Next to Evolve your Organization into a Live Enterprise"/> 
+     </div>
+ 
+
+ <div class="bg-sapphire-medium"></div>
+
+ 
+     <div class="caption">
+         <div class="container">
+             <div class="row">
+             <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 ">
+                 
+                 <p class="h2-heading white-color">Navigate Your Next to Evolve your Organization into a Live Enterprise</p>
+                 
+             </div>
+             </div>
+         </div>
+     </div>
+
+
+
+
+     <div class="freeflowhtml aem-GridColumn aem-GridColumn--default--12">
+        <section id="overview">
+     <article class="container">
+       <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12 wow fadeInDown">
+           <h2 class="title-sml">Overview</h2>
+         </div>
+         <div class="col-md-6 col-sm-12 col-xs-12 mb-sm-20 wow fadeInLeft">
+           <p class="para-ovr pt0">Businesses, like living beings, are constantly driven by their inherent instincts to survive, grow, sustain and flourish.
+             The concept of an enterprise operating like a living, breathing organism has been explored for several decades
+             now.
+           </p>
+         </div>
+         <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
+           <p class="overview-segment-para">Today's market conditions can either stimulate enterprises to navigate to their next innovation, to their next advantage,
+             to their next business model or wilt them to a premature demise. In such a dynamic market, we help our clients
+             transform their organizations to become a thriving Live Enterprise by augmenting their core digital capabilities,
+             advancing their operating models and transforming their talent for the future. This helps them be resilient by
+             responding to market disruptions effectively without interrupting their core business performance. Our Digital
+             Navigation Framework paves the way for this transformation with vital digital capabilities at its core, surrounded
+             by a robust operating model and empowered people to help enterprises in their journey to
+             <a href="" title="Being Resilient. That’s Live Enterprise">Being Resilient. That’s Live Enterprise</a>. </p>
+         </div>
+       </div>
+     </article>
+   </section>
+</div>
+
+
+
+
+<div class="freeflowhtml aem-GridColumn aem-GridColumn--default--12">
+    <section id="infosys_edge" class="pb0-overview">
+ <article class="container-fluid mb501">
+   <div class="row">
+     <div class="wow fadeInDown">
+         <div class="embed-responsive embed-responsive-16by9 show-on-image"> <img src="image/nyn-video-bg.png" alt="" class="img-responsive video-play-img col-lg-12 p0">
+         </div>
+     </div>
+   </div>
+ </article>
+    </section>
+</div>
+
+
+
+<div class="freeflowhtml aem-GridColumn aem-GridColumn--default--12">
+    <section id="nav_your_nxt" class="ptb75 bg-light-white">
+   <article class="container">
+
+       <div class="row">
+           <div class="plus-row eq-height">
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                   <div class="bg-topaz-medium relative mb20">
+                       <img src="image/digital-capabilities-thumb.png"
+                           alt="Digital Core Capabilities" class="img-responsive" />
+                       <div class="eqh-box">
+                           <h3 class="h3">Digital Core Capabilities</h3>
+                           <p class="btn-bottom">Build vital capabilities to deliver digital outcomes.
+                           </p>
+                       </div>
+                   </div>
+                   
+                   <div class="bg-sapphire-medium relative">
+                       <img src="image/digital-operating-thumb.png"
+                           alt="Digital Operating Models" class="img-responsive" />
+                       <div class="eqh-box">
+                           <h3 class="h3">Digital Operating Models</h3>
+                           <p class="btn-bottom">Adopt accelerators to evolve your way of working.
+                           </p>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                   <div class="bg-white black-color relative ht-ctrl-center-box">
+                       <img src="image/tales-of-transformation.png"
+                           alt="Tales of Transformation" class="img-responsive" />
+                       <div class="eqh-box">
+                           <h3 class="h3">Tales of Transformation</h3>
+                           <p class="btn-bottom">Inspiring glimpses into how our clients are navigating their next with Infosys.
+                           </p>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeInUp">
+                   <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 bg-amethyst-medium relative mb20">
+
+                       <img src="image/talent-transformations-thumb.png"
+                           alt="Empowering Talent Transformations" class="img-responsive" />
+                       <div class="eqh-box">
+                           <h3 class="h3">Empowering Talent Transformations</h3>
+                           <p class="btn-bottom">Embrace the talent revolution to remain relevant in the future.
+                           </p>
+                       </div>
+                   </div>
+                   <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 bg-coral-medium relative">
+                       <img src="image/new-possibilities-thumb.png"
+                           alt="Navigating New Possibilities" class="img-responsive" />
+                       <div class="eqh-box">
+                           <h3 class="h3">Navigating New Possibilities</h3>
+                           <p class="btn-bottom">Celebrating everyday stories of everyday champions achieving the intangible.
+                           </p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </article>
+</section>
+</div>
+
+
+
+<div class="successstories aem-GridColumn aem-GridColumn--default--12">
+
+
+
+	<section id="success_stories">
+  <article class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-9 col-xs-12 wow fadeInDown">
+        <h2 class="h2-heading white-color">Thought Leadership</h2>
+        <div class="yellow-dots-left"> <span></span> <span></span> <span></span> </div>
+        <p class="para-txt white-color mb50">Our leaders share insights on Live Enterprise</p>
+      </div>
+    </div>
+<div class="row equal-heights">
+
+                            
+                                
+                			
+<div class="col-md-3 col-sm-6 col-xs-12 mb20 relative wow fadeInLeft">	  
+        <div class="equal-bg bg-light-white">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 p0"> <img src="image/data-live-enterprise.jpg" alt="The ABCs of Data in a Live Enterprise" class="img-responsive get-image-height"/>
+              
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 relative-off">
+              <div class="eqheight">
+                
+                
+                <p class="caption-txt"><a title="The ABCs of Data in a Live Enterprise" class="black-color" href="" target="_blank">The ABCs of Data in a Live Enterprise</a></p>
+
+                <ul class="list-inline tag-bg">
+                    <li class="lct-txt">  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	
+
+                            
+                                
+                			
+<div class="col-md-3 col-sm-6 col-xs-12 mb20 relative wow fadeInLeft">	  
+        <div class="equal-bg bg-light-white">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 p0"> <img src="image/opportunity-live-enterprise.jpg" alt="An Opportunity Called Live Enterprise" class="img-responsive get-image-height"/>
+              
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 relative-off">
+              <div class="eqheight">
+                
+                
+                <p class="caption-txt"><a title="An Opportunity Called Live Enterprise" class="black-color" href="" target="_blank">An Opportunity Called Live Enterprise</a></p>
+
+                <ul class="list-inline tag-bg">
+                    <li class="lct-txt">  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	
+
+                            
+                                
+                			
+<div class="col-md-3 col-sm-6 col-xs-12 mb20 relative wow fadeInLeft">	  
+        <div class="equal-bg bg-light-white">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 p0"> <img src="image/living-transformation-live-enterprise.jpg" alt="Living the transformation into a Live Enterprise" class="img-responsive get-image-height"/>
+              
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 relative-off">
+              <div class="eqheight">
+                
+                
+                <p class="caption-txt"><a title="Living the transformation into a Live Enterprise" class="black-color" href="" target="_blank">Living the transformation into a Live Enterprise</a></p>
+
+                <ul class="list-inline tag-bg">
+                    <li class="lct-txt">  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	
+
+                            
+                                
+                			
+<div class="col-md-3 col-sm-6 col-xs-12 mb20 relative wow fadeInLeft">	  
+        <div class="equal-bg bg-light-white">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 p0"> <img src="image/reimagining-role-learning.jpg" alt="Reimagining the Role of Learning in a Live Enterprise" class="img-responsive get-image-height"/>
+              
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 relative-off">
+              <div class="eqheight">
+                
+                
+                <p class="caption-txt"><a title="Reimagining the Role of Learning in a Live Enterprise" class="black-color" href="" target="_blank">Reimagining the Role of Learning in a Live Enterprise</a></p>
+
+                <ul class="list-inline tag-bg">
+                    <li class="lct-txt">  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+  </article>
+</section>
+</div>
+
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+    <div class="xf-content-height">
+    <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+        
+        <div class="freeflowhtml aem-GridColumn aem-GridColumn--default--12">
+         <footer id="footer">
+        <article>
+            <div class="container pt50 pb50">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                        <h3 class="ftr-head mt-xs-20">Company</h3>
+                        <ul class="list-unstyled footer-txt">
+                            <li><a href="digital.html">Navigate your next</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a>Careers</a></li>
+                            <li><a href="esg.html">ESG</a></li>
+                            <li><a href="investors.html">Investors</a></li>
+                            <li><a>Newsroom</a></li>
+                            <li><a>Alumni</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                        <h3 class="ftr-head mt-xs-20">Subsidiaries</h3>
+                        <ul class="list-unstyled footer-txt">
+                            <li><a>EdgeVerve Systems</a></li>
+                            <li><a>Infosys BPM</a> </li>
+                            <li><a>Infosys Consulting</a></li>
+                            <li><a>Infosys Public Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <h3 class="ftr-head mt-xs-20">Programs</h3>
+                        <ul class="list-unstyled footer-txt">
+                            <li><a>Infosys Foundation</a></li>
+                            <li><a>Infosys Foundation USA</a></li>
+                            <li><a>Infosys Science Foundation</a></li>
+                            <li><a>Infosys Leadership Institute</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <h3 class="ftr-head mt-xs-20">Support</h3>
+                        <ul class="list-unstyled footer-txt">
+                            <li><a>Terms of Use</a></li>
+                            <li><a>Privacy Statement</a></li>
+                            <li><a>Cookie Policy</a> </li>
+                            <li><a>Safe Harbour Provision</a></li>
+                            <li><a>Trademarks</a></li>
+                            <li><a>Site Map</a></li>
+                            <li><a>Modern Slavery Statement</a> </li>
+                            <li><a>Payment Guide for Suppliers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid ptb15 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+                            <p class="mb0">Copyright &copy; 2023 Infosys Limited</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+    
+    </div>   
+    </div>
+    </div>
+    </div> 
+
+</body>
+</html>
